@@ -1,55 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Clone</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Application Form</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-    <nav>
-        <a href="#">Gmail</a>
-        <a href="#">Images</a>
-        <div class="profile">U</div>
-    </nav>
-</header>
+<div class="container">
 
-<main>
+<h1>Job Application Form</h1>
 
-    <img src="google-logo.png" alt="Google Logo" class="logo">
+<form id="applicationForm">
 
-    <div class="search-box">
-        <span class="icon">🔍</span>
-
-        <input type="text" placeholder="Search Google or type a URL">
-
-        <span class="icon">🎤</span>
-    </div>
-
-    <div class="buttons">
-        <button>Google Search</button>
-        <button>I'm Feeling Lucky</button>
-    </div>
-
-</main>
-
-<footer>
-
-<div class="footer-left">
-    <a href="#">About</a>
-    <a href="#">Advertising</a>
-    <a href="#">Business</a>
+<div class="input-group">
+<label>Full Name</label>
+<input type="text" id="name" placeholder="Enter your name">
 </div>
 
-<div class="footer-right">
-    <a href="#">Privacy</a>
-    <a href="#">Terms</a>
-    <a href="#">Settings</a>
+<div class="input-group">
+<label>Email</label>
+<input type="email" id="email" placeholder="Enter your email">
 </div>
 
-</footer>
+<div class="input-group">
+<label>Phone Number</label>
+<input type="text" id="phone" placeholder="Enter your phone number">
+</div>
+
+<div class="input-group">
+<label>Message</label>
+<textarea id="message" rows="5" placeholder="Write your message"></textarea>
+</div>
+
+<button type="submit">Submit Application</button>
+
+<p id="result"></p>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
