@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:white;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:flex-end;
+    padding:20px;
+}
+
+nav{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#202124;
+    font-size:14px;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+.profile{
+    width:35px;
+    height:35px;
+    background:#4285f4;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+}
+
+/* Main */
+
+main{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    margin-top:-80px;
+}
+
+.logo{
+    width:280px;
+    margin-bottom:30px;
+}
+
+.search-box{
+    width:580px;
+    max-width:90%;
+    display:flex;
+    align-items:center;
+    border:1px solid #dcdcdc;
+    border-radius:30px;
+    padding:12px 20px;
+}
+
+.search-box:hover{
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+}
+
+.search-box input{
+    flex:1;
+    border:none;
+    outline:none;
+    font-size:16px;
+    padding:0 10px;
+}
+
+.icon{
+    font-size:18px;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.buttons button{
+    padding:12px 22px;
+    margin:5px;
+    border:none;
+    background:#f8f9fa;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+.buttons button:hover{
+    border:1px solid #dadce0;
+}
+
+/* Footer */
+
+footer{
+    background:#f2f2f2;
+    display:flex;
+    justify-content:space-between;
+    padding:18px 40px;
+    flex-wrap:wrap;
+}
+
+footer a{
+    text-decoration:none;
+    color:#70757a;
+    margin-right:18px;
+    font-size:14px;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/* Responsive */
+
+@media(max-width:600px){
+
+.logo{
+    width:200px;
+}
+
+.search-box{
+    width:95%;
+}
+
+footer{
+    justify-content:center;
+    text-align:center;
+    gap:15px;
+}
+
+}
